@@ -1517,7 +1517,8 @@ of problems. Don't dive into small details only provide high-level plan." proble
 
 Which specialist suits better for solving this kind of problems?"
 			   problem)))
-     (:transform (lambda (res _)
+     (:provider ellama-summarization-provider
+      :transform (lambda (res _)
 		   (format "Message:
 %s
 
